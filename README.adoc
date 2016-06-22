@@ -1,3 +1,10 @@
 = Quotes
 
 Simple SpringBoot application to display quotes from MongoDB
+
+== How to run application
+
+. Get MongoDB
+. Create a database named ```quotes```
+. Insert in collection ```yoda``` content from _yoda.quotes.json_
+. execute ```./gradlew bootrun```
