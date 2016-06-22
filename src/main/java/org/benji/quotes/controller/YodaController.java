@@ -27,6 +27,6 @@ public class YodaController {
 
     @RequestMapping(value = "/yoda/{movie}")
     public List<Yoda> getYodaQuoteFromMovie(@PathVariable String movie, Pageable pageable) {
-        return service.getFromMovie(movie, pageable);
+        return service.getFromMovie(movie.toLowerCase(), pageable);
     }
 }
